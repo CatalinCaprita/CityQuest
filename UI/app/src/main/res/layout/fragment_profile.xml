@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:background="@color/color_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container_brief">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_quest_location"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/ic_baseline_person_24"
+            app:strokeColor="@color/color_primary_dark"
+           />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_quest_location"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/changa_medium"
+            android:textColor="@color/col_text_primary"
+            android:textSize="20sp"
+            tools:text="Username in Here" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/action_confirm"
+            app:srcCompat="@drawable/ic_baseline_settings_24"/>
+    </RelativeLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_below="@id/container_brief"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/color_secondary"
+        app:tabRippleColor="@color/color_secondary"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        app:tabTextAppearance="@style/TabLayoutStyle"
+        android:background="@color/color_primary">
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Stats"/>
+
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.fragment.app.FragmentContainerView
+        android:background="@color/col_bg"
+        android:id="@+id/fragment_container_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout"
+        />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:progressTint="@color/color_primary"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+</RelativeLayout>

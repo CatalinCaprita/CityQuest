@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="question_text">
+        <item>I am more cautious, reserved.</item>
+        <item>I easily trust others and believe in what is good in people.</item>
+        <item>I am comfortable and tend to not stress that much.</item>
+        <item>I am relaxed, stress is not my enemy.</item>
+        <item>I have little interest in arts.</item>
+        <item>I am pretty sociable, where there is people, there is me.</item>
+        <item>I tend to criticize others.</item>
+        <item>Whatever job I have to do, I do it thoroughly</item>
+        <item>I get nervous and insecure easily</item>
+        <item>I see myself as someone who has an active imagination</item>
+    </string-array>
+</resources>

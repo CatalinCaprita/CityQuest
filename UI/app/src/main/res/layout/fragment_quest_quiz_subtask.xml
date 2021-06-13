@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_primary"
+    tools:context=".register.CredentialsFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_subtask_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/changa"
+        tools:text="Who was the first one to discover incredibly long question title in the museum's history?"
+        android:textAlignment="center"
+        android:textColor="@color/color_secondary"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_subtask_title"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:checked="false"
+            android:fontFamily="@font/changa"
+            tools:text="Anwer is Always the first one"
+
+            android:buttonTint="@color/color_secondary_light"
+            android:textSize="18sp" />
+
+        <RadioButton
+
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:buttonTint="@color/color_secondary_light"
+
+            android:fontFamily="@font/changa"
+            tools:text="Anwer is Always the first one"
+
+            android:textSize="18sp" />
+
+        <RadioButton
+
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+
+            android:buttonTint="@color/color_secondary_light"
+            android:fontFamily="@font/changa"
+            tools:text="Anwer is Always the first one"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/changa"
+
+            android:buttonTint="@color/color_secondary_light"
+            tools:text="Anwer is Always the first one"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+</RelativeLayout>

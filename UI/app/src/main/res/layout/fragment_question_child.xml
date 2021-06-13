@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_primary"
+    tools:context=".register.CredentialsFragment">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:indicatorColor="@color/color_secondary"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/changa"
+        android:text="@string/title_mock"
+        android:textAlignment="center"
+        android:textColor="@color/color_secondary"
+        android:textSize="30sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:checkedButton="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_question"
+        android:layout_marginTop="20dp"
+
+       >
+
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:checked="false"
+            android:fontFamily="@font/changa"
+            android:text="@string/quiz_option_1"
+
+            android:buttonTint="@color/color_secondary_light"
+            android:textSize="18sp" />
+
+        <RadioButton
+
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:buttonTint="@color/color_secondary_light"
+
+            android:fontFamily="@font/changa"
+            android:text="@string/quiz_option_2"
+            android:textSize="18sp" />
+
+        <RadioButton
+
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+
+            android:buttonTint="@color/color_secondary_light"
+            android:fontFamily="@font/changa"
+            android:text="@string/quiz_option_3"
+            android:textSize="18sp" />
+
+        <RadioButton
+
+            android:id="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/changa"
+
+            android:buttonTint="@color/color_secondary_light"
+            android:text="@string/quiz_option_4"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/r5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/changa"
+
+            android:buttonTint="@color/color_secondary_light"
+            android:text="@string/quiz_option_5"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_next"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/action_prev_question"
+        android:text="@string/action_prev_question"
+
+        android:textAlignment="center"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24" />
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:contentDescription="@string/action_confirm"
+        android:text="@string/action_next_question"
+        android:textAlignment="center"
+        app:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:iconGravity="end" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_circ"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

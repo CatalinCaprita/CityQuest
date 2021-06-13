@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: cityquest-backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/cityquest
+    username: admin
+    password: adminpa55
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+  liquibase:
+    enabled: false
+    change-log: "classpath:/db/changelog/changelog-master.xml"
+
+
+server:
+  port: ${SELF_PORT}
+  #Server settings that will allow us to communicate via an HTTPS protocol
+  #Also, because we have signed certificate we have generated
+  ssl:
+    enabled: ${SSL_ENABLED:false}
+    key-store: ${KEY_STORE_PATH}
+    key-store-password: ${KEY_STORE_PASS}
+    keyStoreType: ${KEY_STORE_TYPE}
+    keyAlias: ${KEY_STORE_ALIAS}
+
+
+cityquest:
+  jwt:
+    secret: ${JWT_SECRET}
+    issuer: ${JWT_ISSUER_NAME}
+    duration: ${JWT_DURATION}
+
+logging:
+  level:
+    caprita:
+      catalin: DEBUG

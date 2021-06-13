@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<androidx.core.widget.NestedScrollView
+    >-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_primary"
+    tools:context=".main.questmap.QuestResultsFragment">
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_quest_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="1dp"
+        android:fontFamily="@font/changa_medium"
+        android:textAlignment="center"
+        android:textColor="@color/color_secondary"
+        android:textSize="28sp"
+        tools:text="The Blbalbala XY" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="1dp"
+        android:layout_below="@id/tv_quest_title"
+        android:fontFamily="@font/changa_medium"
+        android:textAlignment="center"
+        android:textColor="@color/color_secondary"
+        android:textSize="24sp"
+        android:text="@string/quest_results" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="1dp"
+        android:layout_below="@id/tv_title_results"
+        android:fontFamily="@font/changa_medium"
+        android:textAlignment="center"
+        android:textColor="@color/color_secondary"
+        android:textSize="28sp"
+        android:visibility="gone"
+        tools:text="Your Results" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title_rwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="1dp"
+        android:layout_below="@id/rv_results"
+        android:fontFamily="@font/changa_medium"
+        android:textAlignment="center"
+        android:textColor="@color/color_secondary"
+        android:textSize="22sp"
+        android:visibility="visible"
+        android:text="@string/title_reward_balance"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_primary_rwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="1dp"
+        android:layout_below="@id/tv_title_rwd"
+        android:fontFamily="@font/changa_medium"
+        android:textAlignment="center"
+        android:textColor="@color/color_secondary"
+        android:textSize="22sp"
+        android:visibility="visible"
+        android:text="@string/quest_card_rwd_template"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_secondary_rwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="1dp"
+        android:layout_below="@id/tv_primary_rwd"
+        android:fontFamily="@font/changa_medium"
+        android:textAlignment="center"
+        android:textColor="@color/color_secondary"
+        android:textSize="22sp"
+        android:visibility="visible"
+        android:text="@string/quest_card_rwd_template"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_results"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/tv_title_results"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/cv_item_subtask_result_sns" />
+
+
+</RelativeLayout><!--
+</androidx.core.widget.NestedScrollView>-->

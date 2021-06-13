@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/col_bg_border_dark"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_layout_rect"
+        android:backgroundTint="@color/col_bg_border_dark"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--<FrameLayout
+            android:id="@+id/container_iv"
+            android:layout_width="200dp"
+            android:layout_height="200dp">-->
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_quest_location"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/quest_brief_arcul_de_triumf"
+                app:strokeColor="@color/col_bg_border_dark"
+                app:strokeWidth="5dp" />
+<!--        </FrameLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/container_tv_brief"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_quest_location"
+            android:layout_marginStart="1dp"
+
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/card_layout_rect"
+            android:backgroundTint="@color/color_secondary_light"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_quest_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/color_secondary"
+                android:backgroundTint="@color/color_secondary"
+                android:fontFamily="@font/changa_medium"
+                android:paddingStart="15dp"
+                android:textColor="@color/col_text_primary"
+                android:textSize="24sp"
+                tools:text="The Blbalbala XY " />
+
+            <LinearLayout
+                android:id="@+id/container_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_quest_title">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_quest_location"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/changa"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/quest_card_location_template"
+                    android:textColor="@color/col_text_primary"
+                    android:textSize="14sp"
+                    tools:text=" Location: \n Muzeul de Istorie Si stiinte ale naturii Grigorie Antipa" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_quest_type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/changa"
+                    android:paddingStart="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/quest_card_type_template"
+                    android:textAlignment="center"
+                    android:textColor="@color/col_text_primary"
+                    android:textSize="14sp"
+                    tools:text="Type: GUESSTIMATE" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/container_first">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_primary_rwd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/changa"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+
+                    android:text="@string/quest_card_rwd_template"
+                    android:textColor="@color/col_text_primary"
+
+                    android:textSize="14sp"
+                    tools:text="+20 KNOWLEDGE" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_secondary_rwd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/changa"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/quest_card_rwd_template"
+                    android:textAlignment="center"
+                    android:textColor="@color/col_text_primary"
+                    android:textSize="14sp"
+                    tools:text="+40 SOCIABILITY" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_below="@id/container_second"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/grey_gradient_white" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

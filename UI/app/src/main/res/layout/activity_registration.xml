@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary"
+    tools:context=".register.RegisterActivity">
+<!--
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+-->
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/color_primary" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/changa"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:text="@string/err_title"
+        android:textAlignment="center"
+        android:textColor="@color/color_secondary"
+        android:textSize="24sp" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/changa"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/tv_title_error"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:text="@string/err_register_step_fail"
+        android:textAlignment="center"
+        android:textColor="@color/color_secondary"
+        android:textSize="24sp" />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_error"
+        android:layout_marginTop="20dp"
+        app:icon="@drawable/ic_baseline_login_24"
+        app:backgroundTint="@color/color_secondary"
+        android:text="@string/action_redirect_login"
+        app:elevation="3dp"
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:fontFamily="@font/changa_medium"
+        />
+
+
+
+</RelativeLayout>

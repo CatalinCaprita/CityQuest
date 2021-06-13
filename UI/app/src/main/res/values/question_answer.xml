@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="question_answers">
+<item>Definitely not me!</item>
+<item>Does not sound like me.</item>
+<item>Don\'t really know…</item>
+<item>Sounds like me.</item>
+<item>Absolutely like me!</item>
+</string-array>
+</resources>

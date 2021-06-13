@@ -1,0 +1,167 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/col_bg_border_dark"
+    android:background="@drawable/card_layout_rect"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_layout_rect"
+        android:backgroundTint="@color/col_bg_border_dark"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_quest_location"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/quest_brief_arcul_de_triumf"
+            app:strokeColor="@color/color_primary_dark"
+            app:strokeWidth="2dp" />
+        <!--        </FrameLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/container_tv_brief"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_quest_location"
+            android:background="@drawable/card_layout_rect"
+            android:backgroundTint="@color/color_primary_dark"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_quest_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/color_secondary"
+                android:fontFamily="@font/changa_medium"
+                android:paddingStart="15dp"
+                android:textColor="@color/col_text_primary"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                tools:text="The Blbalbala XY " />
+
+
+            <LinearLayout
+                android:id="@+id/container_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="@color/color_secondary"
+                android:layout_below="@id/tv_quest_title">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_quest_location"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/changa"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/quest_card_location_template"
+                    android:textColor="@color/col_text_primary"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    tools:text=" Muzeul de Istorie Si Stiinte ale Naturii Grigorie Antipa" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5"
+                android:layout_below="@id/container_first">
+
+                <LinearLayout
+                    android:id="@+id/container_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@color/color_secondary_light"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/iv_quest_duration"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/changa"
+                        android:src="@drawable/ic_baseline_timer_24"
+                        android:tint="@color/color_primary" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_quest_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/changa"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="10dp"
+
+                        android:text="@string/quest_card_rwd_template"
+                        android:textColor="@color/col_text_primary"
+
+                        android:textSize="14sp"
+                        tools:text="3 hrs" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_primary_rwd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="@font/changa"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+
+                    android:background="@color/color_secondary_light"
+
+                    android:text="@string/quest_card_rwd_template"
+                    android:textColor="@color/col_text_primary"
+
+                    android:textSize="14sp"
+                    tools:text="+20 KNOWLEDGE" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_secondary_rwd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="@font/changa"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+
+                    android:background="@color/color_secondary_light"
+                    android:text="@string/quest_card_rwd_template"
+
+                    android:textAlignment="center"
+                    android:textColor="@color/col_text_primary"
+                    android:textSize="14sp"
+                    tools:text="+40 SOCIABILITY" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

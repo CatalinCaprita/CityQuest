@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.questmap.QuestMapFragment">
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"/>
+
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/cv_remaining_quests"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="3dp"-->
+<!--        android:layout_marginEnd="3dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        app:cardCornerRadius="2dp"-->
+<!--        android:visibility="gone"-->
+<!--        android:backgroundTint="@color/col_bg_border_dark"-->
+<!--        android:elevation="4dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_margin="1dp"-->
+<!--            android:background="@drawable/card_layout_rect"-->
+<!--            android:backgroundTint="@color/col_bg_border">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/container_hd_day1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/card_layout_rect"-->
+<!--                android:backgroundTint="@color/color_primary_light"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_day1_heading"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:fontFamily="@font/changa_medium"-->
+<!--                    android:text="@string/hd_day1"-->
+<!--                    android:textColor="@color/col_text_primary"-->
+<!--                    android:textDirection="firstStrongRtl"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_day1_heading2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:layout_marginTop="0dp"-->
+<!--                    android:fontFamily="@font/changa_medium"-->
+<!--                    android:text="@string/shd_day_high"-->
+<!--                    android:textColor="@color/col_text_primary"-->
+<!--                    android:textDirection="firstStrongRtl"-->
+<!--                    android:textSize="18sp" />-->
+<!--            </LinearLayout>-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/rv_remaining_quests"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/container_hd_day1"-->
+<!--                android:layout_alignStart="@id/container_hd_day1"-->
+<!--                android:layout_alignEnd="@id/container_hd_day1"-->
+<!--                android:layout_marginStart="1dp"-->
+
+<!--                android:layout_marginEnd="1dp"-->
+<!--                android:layout_marginBottom="1dp"-->
+
+<!--                android:background="@color/col_bg_light"-->
+<!--                android:backgroundTint="@color/col_bg_light"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:scrollbars="vertical"-->
+<!--                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--                tools:listitem="@layout/cv_item_quest_brief"-->
+<!--                tools:orientation="horizontal" />-->
+
+
+<!--        </RelativeLayout>-->
+<!--    </com.google.android.material.card.MaterialCardView>-->
+
+</RelativeLayout>

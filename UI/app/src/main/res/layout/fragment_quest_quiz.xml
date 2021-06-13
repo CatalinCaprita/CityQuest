@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_primary">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/linear_progress_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        app:indicatorColor="@color/color_secondary"/>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/linear_progress_indicator"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        tools:visibility="visible">
+
+    </androidx.fragment.app.FragmentContainerView>
+    <RelativeLayout
+        android:id="@+id/container_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/fragment_container_view">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/btn_prev"
+            android:fontFamily="@font/changa"
+            android:layout_marginBottom="20dp"
+            android:text="@string/quest_time_left_template"
+            android:textAlignment="center"
+            android:textColor="@color/color_secondary"
+            android:textSize="24sp" />
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/action_prev_question"
+            android:text="@string/action_prev_question"
+
+            android:textAlignment="center"
+            app:icon="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/btn_prev"
+            android:layout_alignBottom="@id/btn_prev"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/action_confirm"
+            android:text="@string/action_next_question"
+            android:textAlignment="center"
+            app:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+            app:iconGravity="end" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_understood"
+        android:backgroundTint="@color/color_secondary"
+        android:fontFamily="@font/changa"
+        android:visibility="visible"
+            tools:visibility="gone"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        app:icon="@drawable/ic_baseline_check_24"
+        app:iconGravity="textEnd"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        app:strokeColor="@color/black"
+        />
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_back_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_back_to_map"
+            android:backgroundTint="@color/color_secondary"
+            android:fontFamily="@font/changa"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            app:icon="@drawable/ic_baseline_map_24"
+            app:iconGravity="textEnd"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            app:strokeColor="@color/black"
+            />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:progressTint="@color/color_secondary"
+
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

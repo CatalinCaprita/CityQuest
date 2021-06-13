@@ -1,0 +1,61 @@
+version: '3'
+
+services:
+  tfserving:
+    image: tensorflow/serving
+    container_name: tfserving
+    volumes:
+      - type: bind
+        source: //c/Users/Catalin/Desktop/Licenta/backend/tensorflow/ranker
+        target: /models/ranker
+    environment:
+      MODEL_NAME: ranker
+    ports:
+    - 8501:8501
+    networks:
+      - backend
+
+  db:
+    image: mysql:latest
+    container_name: db
+    ports:
+        - 3306:3306
+    restart: always
+    security_opt:
+      - seccomp:unconfined
+    environment:
+        MYSQL_DATABASE: cityquest
+        MYSQL_USER: admin
+        MYSQL_PASSWORD: adminpa55
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_ROOT_HOST: "%"
+    networks:
+      - backend
+
+#  cqserver:
+#    image: cityquest-backend:latest
+#    container_name: cityquest-backend
+#    depends_on:
+#      - db
+#    entrypoint: [ "./dockerize","-wait=tcp://db:3306","-wait=tcp://tfserving:8501","-timeout=60s","--","java", "org.springframework.boot.loader.JarLauncher" ]
+#    ports:
+#        - 8443:8443
+#        - 8081:8081
+#    environment:
+#      SELF_PORT: 8443
+#      KEY_STORE_PATH: classpath:certs/cityquest.p12
+#      KEY_STORE_PASS: cityquest
+#      KEY_STORE_TYPE: PKCS12
+#      KEY_STORE_ALIAS: cityquest
+#      JWT_DURATION: 1200
+#      JWT_ISSUER_NAME: cityquest:io
+#      JWT_SECRET: cityquestsecret
+#      ADMIN_USERNAME: admin
+#      ADMIN_PASSWORD: adminpa55
+#      CSV_FILE_PATH: src/main/resources/csv/mid_march_results.csv
+#    networks:
+#      - backend
+networks:
+  backend:
+
+

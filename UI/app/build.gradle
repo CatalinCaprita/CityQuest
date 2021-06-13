@@ -1,0 +1,113 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.secrets_gradle_plugin' version '0.5'
+}
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        applicationId "caprita.catalin.cityquest.ui"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'org.jetbrains:annotations:15.0'
+    def appCompatSupportVersion = "28.0.0"
+    def fragment_version = "1.3.3"
+    def lifecycle_version = "2.3.1"
+    def dagger_version = "2.22"
+    def materialVersion = "1.3.0"
+    def glideVersion = "4.9.0"
+    def retrofitVersion = "2.9.0"
+    def gsonVersion = "2.8.6"
+
+//  MVVM
+    implementation 'androidx.annotation:annotation:1.1.0'
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+    implementation 'androidx.appcompat:appcompat:1.3.0-rc01'
+
+//    Retrofit & REST API
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.google.code.gson:gson:$gsonVersion"
+    // GSON Converter
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    // RxJava
+    def rxjava_version = '2.1.1'
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+    // RxAndroid
+    def rxandroid_version = '2.1.1'
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+    // Rx-Retrofit Call Adapter
+    def rxcalladapter_version = '2.5.0'
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rxcalladapter_version" // Retrofit call adapter
+    // Reactive Streams (convert Observable to LiveData)
+    def reactivestreams_version = "1.1.1"
+    implementation "android.arch.lifecycle:reactivestreams:$reactivestreams_version"
+
+//  DAGGER & DI
+    // Dagger2 core
+    implementation "com.google.dagger:dagger:$dagger_version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$dagger_version"
+    // Dagger Android
+    implementation "com.google.dagger:dagger-android:$dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger_version"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$dagger_version"
+
+//  UI
+    // Java Fragment
+    implementation "androidx.fragment:fragment:$fragment_version"
+    //    Support
+    implementation "com.android.support:appcompat-v7:$appCompatSupportVersion"
+    //    Material
+    implementation "com.google.android.material:material:$materialVersion"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    //    Glide
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
+    //  ViewPager
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    //    Charts
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    def mapsVersion='17.0.1'
+//    Maps
+    implementation "com.google.android.gms:play-services-maps:$mapsVersion"
+    def locationVersion='16.0.0'
+    implementation "com.google.android.gms:play-services-location:$locationVersion"
+    def mapsUtilsVersion='0.5+'
+    implementation "com.google.maps.android:android-maps-utils:$mapsUtilsVersion"
+//    Permissions
+    // For developers using AndroidX in their applications
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    // For developers using the Android Support Library
+    implementation 'pub.devrel:easypermissions:3.0.0'
+//  TESTING
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+}

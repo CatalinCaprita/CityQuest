@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/popup_item_edit"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="@string/popup_edit_profile"/>
+    <item
+        android:id="@+id/popup_item_logout"
+        android:icon="@drawable/ic_baseline_bar_chart_24"
+        android:title="@string/popup_logout" />
+</menu>

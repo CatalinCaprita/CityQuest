@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card_layout_rect"
+    android:backgroundTint="@color/col_bg_border">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/card_layout_rect"
+        android:backgroundTint="@color/color_primary_light">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tv_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_primary_light"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+
+        android:hint="Companion Name"
+        app:errorTextColor="@color/design_default_color_error"
+        android:textColorHint="@color/color_secondary"
+        app:boxStrokeColor="@color/color_secondary_light"
+        app:boxStrokeWidth="1dp"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/color_secondary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tv_nickname"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_alignStart="@id/tv_name"
+        android:layout_alignEnd="@id/tv_name"
+        android:background="@color/color_primary_light"
+        android:hint="Nickname (Optional)"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        app:errorTextColor="@color/design_default_color_error"
+        android:textColorHint="@color/color_secondary"
+        app:boxStrokeColor="@color/color_secondary_light"
+        app:boxStrokeWidth="1dp"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/color_secondary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/color_secondary"
+        android:text="@string/action_confirm"
+        android:layout_below="@id/tv_nickname"
+        android:layout_centerHorizontal="true"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/design_default_color_error"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:text="@string/action_remove"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/btn_confirm"/>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

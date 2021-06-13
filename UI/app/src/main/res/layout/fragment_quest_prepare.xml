@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary"
+    tools:context=".main.questmap.QuestPrepareFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_quest_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="1dp"
+        android:fontFamily="@font/changa_medium"
+        android:textAlignment="center"
+        android:textColor="@color/color_secondary"
+        android:textSize="32sp"
+        tools:text="The Blbalbala XY" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_quest_type_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/tv_quest_title"
+        android:layout_margin="1dp"
+        android:fontFamily="@font/changa"
+        android:textAlignment="center"
+        android:textColor="@color/col_text_primary"
+        android:textSize="22sp"
+        tools:text="@string/quest_guesstimate_description" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_quest_duration_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignBottom="@id/tv_timer"
+        android:layout_toEndOf="@id/iv_timer"
+
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/changa"
+        android:textAlignment="center"
+        android:textColor="@color/col_text_primary"
+        android:textSize="18sp"
+        android:text="@string/quest_duration_description" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignEnd="@id/iv_timer"
+        android:layout_below="@id/iv_timer"
+        android:layout_margin="1dp"
+        android:fontFamily="@font/changa"
+        android:textAlignment="center"
+        android:textColor="@color/color_secondary"
+        android:textSize="22sp"
+        android:text="@string/quest_timer_template" />
+
+    <ImageView
+        android:id="@+id/iv_timer"
+        android:layout_width="104dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_quest_type_desc"
+        android:src="@drawable/ic_baseline_timer_24" />
+
+</RelativeLayout>

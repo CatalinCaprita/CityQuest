@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">CityQuest</string>
+    <!--AUTH-->
+    <string name="err_invalid_cred">Username or Password are wrong.</string>
+
+    <!--REGISTRATION-->
+    <string name="action_register">Register</string>
+    <string name="title_credentials">First, let us know if it\'s you</string>
+    <string name="title_details">Formalities done! Let us get to know each other</string>
+
+    <string name="action_confirm">Confirm</string>
+    <string name="action_confirm_dialog">Sure!</string>
+    <string name="action_redirect_login">Go to Login</string>
+    <string name="action_finish">Finish</string>
+    <string name="action_next_question">Next</string>
+    <string name="action_prev_question">Back</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_skip">Skip</string>
+
+
+    <string name="title_mock">Some lengthy question text is on the way.</string>
+
+    <string name="title_register_add_companions">Travelling with others is so great! Would you like to tell us who are you travelling with?</string>
+    <string name="quiz_option_1">Definitely NOT me!</string>
+    <string name="quiz_option_2">Does not sound like me.</string>
+    <string name="quiz_option_3">Don\'t really know…</string>
+    <string name="quiz_option_4">Sounds like me.</string>
+    <string name="desc_waiting_server_resp">Let us see what quests are worthy of a personality like yours!</string>
+    <string name="title_wait">All done form your part!</string>
+    <string name="hd_wait_redirect">And that should be it! Many quests await you, traveler!</string>
+    <string name="hd_wait_desc1"> Adding you to the registry</string>
+    <string name="hd_wait_desc2"> Fetching quests suited to you</string>
+
+    <string name="quiz_option_5">Absolutely like me!</string>
+    <string name="err_passwords_not_matching">Passwords do not match</string>
+    <string name="err_empty">Please complete</string>
+    <string name="err_server_wrong">We seem to have messed up.. Please retry later.</string>
+
+    <!--USER's JOURNAL-->
+    <string name="title_user_journal">%1$s\'s Journey so far</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!--RV_COMPANIONS-->
+    <string name="hd_journey_begin">%1$s \'s journey began on %2$s</string>
+    <string name="hd_companion_gather">%1$s first gathered %2$s travelling companions:</string>"
+    <string name="companion_name">%1$s</string>
+    <string name="companion_desc">Known as "%1$s"</string>
+    <!--DAY DESCRIPTIONS-->
+    <string name="hd_day1">On the first day,</string>
+    <string name="hd_day2">On the second day,</string>
+    <string name="hd_day3">On the third day,</string>
+
+    <string name="shd_day_low"> They ventured not that far, and not that wide,\n completing some quests:</string>
+    <string name="shd_day_medium"> They had their fair share of journey,\n completing many-a-quest:</string>
+    <string name="shd_day_high"> Wow! They must be still recovering\n after completing these many quests:</string>
+    <!--QUEST CARD-->
+    <string name="quest_card_location_template">Location: \n %1$s</string>
+    <string name="quest_card_type_template">Type: \n%1$s</string>
+    <string name="quest_card_rwd_template"> + %1$d %2$s</string>
+    <string name="quest_card_duration_template">Duration %1$d</string>
+
+    <!--PROFILE-->
+    <string name="state_loading">Loading...</string>
+    <string name="profile_tab_credentials">Credentials</string>
+    <string name="profile_tab_stats">Stats</string>
+    <string name="label_progres_knowledge">Knowledge</string>
+    <string name="label_progres_vitality">Vitality</string>
+    <string name="label_progres_swiftness">Swiftness</string>
+    <string name="label_progres_sociability">Sociability</string>
+    <string name="date_info">You joined on %1$s</string>
+    <string name="profile_header_personality">Your Personality Index</string>
+    <string name="profile_header_quests_prog">Your Quests Progress</string>
+    <string name="profile_quests_progress"> %1$d out of 25 possible</string>
+    <string name="profile_header_traveler_traits">Your Traveler Traits</string>
+    <string name="profile_knowledge_description">The Knowledge Traveler trait is Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi metus, scelerisque vel leo vel, aliquet convallis erat. Vivamus a posuere mauris. Suspendisse est nisl, luctus ut ex a, suscipit tincidunt mi. </string>
+    <string name="profile_vitality_description">The Vitality Traveler trait is description</string>
+    <string name="profile_swiftness_description">The Swiftness Traveler trait is description</string>
+    <string name="profile_sociability_description">The Sociability Traveler trait is description</string>
+    <string name="profile_action_submit_changes">Submit Changes</string>
+    <!--PROFILE MENU-->
+    <string name="popup_edit_profile">Edit Profile</string>
+    <string name="popup_logout">Logout</string>
+
+    <!--QUEST MAP-->
+    <string name="action_start_quest">Start</string>
+    <string name="quest_quiz_description">The quiz quests aim to make you take home some facts about this
+        place\'s past and present. While you are visiting, try to answer to our questions correctly!
+    </string>
+    <string name="quest_guesstimate_description">We all know the why you are here.
+    Maybe we can help you decide on the course with this quest. Try to guess the price ranges for different items
+    on the menu!
+    </string>
+    <string name="quest_stroll_and_see_description">We are sure you\'ll enjoy the view while visiting this location
+        , but the beauty is in the details! Try and see which of these items you can spot during your stroll.</string>
+    <!--QUEST SOLVING-->
+    <string name="quest_duration_description">Make it in time! After the time has expired, we will
+    consider all your answers up to that point.</string>
+    <string name="quest_timer_template">%1$d Hrs</string>
+    <string name="action_understood">Understood</string>
+    <string name="quest_time_left_template">Time left: %1$s:%2$s:%3$s</string>
+    <string name="quest_time_up_template">Time left: 0!</string>
+
+    <string name="action_done">Done!</string>
+    <string name="action_submit">Submit</string>
+    <string name="are_you_sure">Are you sure you want to submit ? There is still some time left</string>
+    <string name="time_is_up">Time is up! We will consider all your answers so far.</string>
+    <string name="back_to_questmap">Back to Map</string>
+    <string name="subtask_title_template">%1$d. %2$s</string>
+    <string name="correct_answer_was">The correct answer was:</string>
+    <string name="user_answer_was">Your answer was:</string>
+    <string name="user_answer_correct">Correct!</string>
+    <string name="err_results_not_http">That\'s embarrassing! We recorded your response but we cannot fetch
+        it at the moment. Please try again a little later.</string>
+    <string name="err_results_404">We could not find the your answers to this quest for the moment.
+    Please try again a little later.</string>
+    <string name="err_500">Things are quite messy in here. We\'ll retry to process your answer
+    later.</string>
+    <string name="err_quest_404">We cannot not fetch the quest right now. Please retry later.</string>
+    <string name="action_back_to_map">Back to Quest Map</string>
+    <string name="title_items_to_check">Things that you can find:</string>
+    <string name="title_items_checked">Things you found:</string>
+    <string name="toast_empty_quest_list">It seems there are no new quests for you.</string>
+
+    <!--BOTTOM NAV-->
+    <string name="nav_lab_journal">Journal</string>
+    <string name="nav_lab_me">Me</string>
+    <string name="nav_lab_quests">Quests</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_remove">Remove</string>
+    <string name="quest_results">Your Results</string>
+    <string name="user_answer_nothing">Nothing</string>
+    <string name="title_reward_balance">Traveler Traits improvements:</string>
+    <string name="guesstimate_range_template">%1$d-%2$d</string>
+    <string name="err_min_max">Please select a valid interval!</string>
+    <string name="err_number_format">Number format error</string>
+    <string name="err_predictions">It seems we could not find quests suited to you right now. Please log in later and we will try again.</string>
+    <string name="err_register_step_fail">Something failed along the registration step. Please try to register later.</string>
+    <string name="err_title">That\'s on us!</string>
+    <string name="enable_maps_request">Please check your Google Services and Continue later.</string>
+    <string name="require_gps">In order to seek your quests, please enable GPS location.</string>
+    <string name="require_location">In order to see all your remaining quests, you will need to let us know where you are.</string>
+    <string name="dialog_start_quest">Do you want to start this quest?</string>
+
+    <!--ERR MESSAGES-->
+
+
+</resources>

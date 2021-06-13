@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_waiting_steps">
+        <item>Measuring your skills</item>
+        <item>Calling all that require services</item>
+        <item>Choosing what quests are deemed worthy for you</item>
+        <item>Highlighting points</item>
+    </string-array>
+</resources>

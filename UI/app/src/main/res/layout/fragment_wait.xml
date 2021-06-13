@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".register.WaitFragment"
+    android:background="@color/color_primary">
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_wait_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/changa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/title_wait"
+        android:textAlignment="center"
+        android:textColor="@color/color_secondary_light"
+        android:textSize="30sp">
+
+    </com.google.android.material.textview.MaterialTextView>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_wait_sh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_wait_title"
+        android:fontFamily="@font/changa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/desc_waiting_server_resp"
+        android:textAlignment="center"
+        android:textColor="@color/color_secondary_light"
+        android:textSize="30sp">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_wait_sh"
+        android:layout_margin="40dp"
+        android:visibility="visible"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_wait_steps_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_bar"
+        android:fontFamily="@font/changa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/hd_wait_desc1"
+        android:textAlignment="center"
+        android:textColor="@color/color_primary_dark"
+        android:textSize="20sp">
+
+    </com.google.android.material.textview.MaterialTextView> <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/progress_bar"
+        android:layout_below="@id/tv_wait_sh"
+        android:layout_marginTop="20dp"
+        app:icon="@drawable/ic_baseline_login_24"
+        app:backgroundTint="@color/color_secondary"
+        android:text="@string/action_redirect_login"
+        app:elevation="3dp"
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:fontFamily="@font/changa_medium"
+        />
+
+</RelativeLayout>

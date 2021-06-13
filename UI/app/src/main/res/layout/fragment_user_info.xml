@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/col_bg"
+    tools:context=".main.profile.UserInfoFragment">
+
+    <!--  <androidx.core.widget.NestedScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/col_bg">-->
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/col_bg">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:background="@color/col_bg_light"
+            android:hint="Email"
+            android:textColorHint="@color/color_primary"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp"
+
+            app:boxStrokeColor="@color/col_bg_dark"
+            app:errorEnabled="false"
+            app:hintTextColor="@color/color_primary">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/changa_medium"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/col_text_primary"
+                android:textSize="18sp"
+                tools:text="@string/date_info"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_firstname"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_email"
+            android:layout_centerInParent="true"
+            android:background="@color/col_bg_light"
+            android:hint="First Name"
+            android:textColorHint="@color/color_primary"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp"
+
+            app:boxStrokeColor="@color/col_bg_dark"
+            app:errorEnabled="false"
+            app:hintTextColor="@color/color_primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/changa_medium"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/col_text_primary"
+                android:textSize="18sp"
+                tools:text="@string/date_info" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_lastname"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_firstname"
+            android:layout_centerInParent="true"
+            android:background="@color/col_bg_light"
+            android:hint="Last Name"
+            android:textColorHint="@color/color_primary"
+            app:boxStrokeColor="@color/col_bg_dark"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:errorEnabled="false"
+            app:hintTextColor="@color/color_primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/changa_medium"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/col_text_primary"
+                android:textSize="18sp"
+                tools:text="@string/date_info" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_gender"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_lastname"
+            android:layout_centerInParent="true"
+            android:background="@color/col_bg_light"
+            android:hint="Gender"
+            app:boxStrokeColor="@color/color_primary"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:errorEnabled="false"
+            app:hintTextColor="@color/color_primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/changa_medium"
+                android:inputType="none"
+                android:textAlignment="center"
+                android:textColor="@color/col_text_primary"
+                android:textSize="18sp"
+                tools:text="@string/date_info" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_joindate"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_gender"
+            android:layout_centerInParent="true"
+            android:background="@color/col_bg_light"
+            android:hint="Joined Date"
+            android:textColorHint="@color/color_primary"
+            app:boxStrokeColor="@color/col_bg_dark"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:errorEnabled="false"
+            app:hintTextColor="@color/color_primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/changa_medium"
+                android:inputType="none"
+                android:textAlignment="center"
+                android:textColor="@color/col_text_primary"
+                android:textSize="18sp"
+                tools:text="@string/date_info" />
+        </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_joindate"
+        android:fontFamily="@font/changa_medium"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:text="@string/profile_action_submit_changes"
+        app:backgroundTint="@color/color_accent"/>
+
+    </RelativeLayout>
+    <!-- TODO: Update blank fragment layout -->
+    <!--    </androidx.core.widget.NestedScrollView>-->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:progressBackgroundTint="@color/color_primary"
+        android:visibility="visible" />
+</RelativeLayout>
